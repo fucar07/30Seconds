@@ -1438,7 +1438,6 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => (185 + (f0() * 90));
 		},
-		() => -10,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => (f0() * 0.3);
@@ -1453,9 +1452,13 @@ self.C3_ExpressionFuncs = [
 			return () => (n0.ExpObject() + 120);
 		},
 		() => -43805311999,
-		() => 15,
-		() => 1600,
+		() => 10,
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpInstVar();
+		},
 		() => 70,
+		() => 1600,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
@@ -1464,8 +1467,8 @@ self.C3_ExpressionFuncs = [
 		() => "Zaman",
 		() => -717750023016447,
 		() => "spin",
-		() => 10,
 		() => -717706215031807,
+		() => -10,
 		() => "tiktak",
 		() => -20,
 		() => "dogruanimasyon",

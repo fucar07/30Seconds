@@ -47,6 +47,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.System.Exps.loopindex,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
+		C3.Plugins.System.Cnds.PickByComparison,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Behaviors.Timer.Cnds.OnTimer,
 		C3.Plugins.System.Cnds.CompareVar,
